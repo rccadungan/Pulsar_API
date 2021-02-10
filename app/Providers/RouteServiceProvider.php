@@ -26,6 +26,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string|null
      */
+    //Uncomment this command to avoid errors in using old version of route syntax. 
     // protected $namespace = 'App\\Http\\Controllers';
 
     /**
