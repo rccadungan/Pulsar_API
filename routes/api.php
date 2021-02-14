@@ -3,6 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StudentController;//Use StudentController
+use App\Http\Controllers\StudentProfileController;//Use StudentProfileController
+
 
 /*
 |--------------------------------------------------------------------------
@@ -32,5 +34,23 @@ Route::post('addStudent', [StudentController::class, 'addStudent']);
 //Update a specific student data in the 'students' table using the uniques ID. 
 Route::put('updateStudent/{id}', [StudentController::class, 'updateStudent']);
 
-//Update a specific student data in the 'students' table using the uniques ID. 
+//Delete a specific student data in the 'students' table using the uniques ID. 
 Route::delete('deleteStudent/{id}', [StudentController::class, 'deleteStudent']);
+
+
+//Student Profile Table
+//Get all 'student_profiles' table data. 
+Route::get('/studentProfiles', [StudentProfileController::class, 'getStudentProfile']);
+
+//Get specific 'students_profiles'' table data using the unique ID. 
+Route::get('studentProfile/{id}', [StudentProfileController::class, 'getStudentProfileById']);
+
+//Add student to the 'students_profiles'' table. 
+Route::post('addStudentProfile', [StudentProfileController::class, 'addStudentProfile']);
+
+//Update a specific student data in the 'students_profiles'' table using the uniques ID. 
+Route::put('updateStudentProfile/{id}', [StudentProfileController::class, 'updateStudentProfile']);
+
+//Delete a specific student data in the 'students_profiles'' table using the uniques ID. 
+Route::delete('deleteStudentProfile/{id}', [StudentProfileController::class, 'deleteStudentProfile']);
+

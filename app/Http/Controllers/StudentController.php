@@ -37,6 +37,7 @@ class StudentController extends Controller
             return response($student, 200);
         }
     
+        //This function will delete a specific student data in the 'students' table. 
         public function deleteStudent(Request $request, $id) {
             $student = Student::find($id);
             if (is_null($student)) {
