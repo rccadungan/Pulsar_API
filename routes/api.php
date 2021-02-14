@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StudentController;//Use StudentController
 use App\Http\Controllers\StudentProfileController;//Use StudentProfileController
 use App\Http\Controllers\NotifTypeController;//Use NotifTypeController
+use App\Http\Controllers\NotificationController;//Use NotificationController
 
 
 /*
@@ -64,12 +65,30 @@ Route::get('/notifTypes', [NotifTypeController::class, 'getnotifType']);
 //Get specific 'notif_types' table data using the unique ID. 
 Route::get('notifType/{id}', [NotifTypeController::class, 'getnotifTypeById']);
 
-//Add student to the 'notif_types' table. 
+//Add notification type to the 'notif_types' table. 
 Route::post('addnotifType', [NotifTypeController::class, 'addnotifType']);
 
-//Update a specific student data in the 'notif_types' table using the uniques ID. 
+//Update a specific notification type in the 'notif_types' table using the uniques ID. 
 Route::put('updatenotifType/{id}', [NotifTypeController::class, 'updatenotifType']);
 
-//Delete a specific student data in the 'notif_types' table using the uniques ID. 
+//Delete a specific notification type in the 'notif_types' table using the uniques ID. 
 Route::delete('deletenotifType/{id}', [NotifTypeController::class, 'deletenotifType']);
+
+
+
+//Notification Table
+//Get all 'notifications' table data. 
+Route::get('/notifications', [NotificationController::class, 'getNotification']);
+
+//Get specific 'notifications' table data using the unique ID. 
+Route::get('notification/{id}', [NotificationController::class, 'getNotificationByID']);
+
+//Add notification to the 'notifications' table. 
+Route::post('addNotification', [NotificationController::class, 'addNotification']);
+
+//Update a specific notification in the 'notifications' table using the uniques ID. 
+Route::put('updateNotification/{id}', [NotificationController::class, 'updateNotification']);
+
+//Delete a specific notification in the 'notifications' table using the uniques ID. 
+Route::delete('deleteNotification/{id}', [NotificationController::class, 'deleteNotification']);
 

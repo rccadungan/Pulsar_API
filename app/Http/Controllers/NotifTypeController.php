@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\NotifType; //Use the Student Profile Model.
+use App\Models\NotifType; //Use the NotifType Model.
 
 class NotifTypeController extends Controller
 {
