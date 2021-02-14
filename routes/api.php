@@ -60,19 +60,19 @@ Route::delete('deleteStudentProfile/{id}', [StudentProfileController::class, 'de
 
 //Notif Type Table
 //Get all 'notif_types' table data. 
-Route::get('/notifTypes', [NotifTypeController::class, 'getnotifType']);
+Route::get('/notifTypes', [NotifTypeController::class, 'getNotifType']);
 
 //Get specific 'notif_types' table data using the unique ID. 
-Route::get('notifType/{id}', [NotifTypeController::class, 'getnotifTypeById']);
+Route::get('notifType/{id}', [NotifTypeController::class, 'getNotifTypeById']);
 
 //Add notification type to the 'notif_types' table. 
-Route::post('addnotifType', [NotifTypeController::class, 'addnotifType']);
+Route::post('addNotifType', [NotifTypeController::class, 'addNotifType']);
 
 //Update a specific notification type in the 'notif_types' table using the uniques ID. 
-Route::put('updatenotifType/{id}', [NotifTypeController::class, 'updatenotifType']);
+Route::put('updateNotifType/{id}', [NotifTypeController::class, 'updateNotifType']);
 
 //Delete a specific notification type in the 'notif_types' table using the uniques ID. 
-Route::delete('deletenotifType/{id}', [NotifTypeController::class, 'deletenotifType']);
+Route::delete('deleteNotifType/{id}', [NotifTypeController::class, 'deleteNotifType']);
 
 
 
