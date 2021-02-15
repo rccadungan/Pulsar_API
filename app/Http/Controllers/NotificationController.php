@@ -27,7 +27,7 @@ class NotificationController extends Controller
             return response()->json($notification, 201);
         }
     
-        //This public function will update a specific notificationto the 'notifications' table using the unique ID.
+        //This public function will update a specific notification to the 'notifications' table using the unique ID.
         public function updateNotification(Request $request, $id) {
             $notification = Notification::find($id);
             if (is_null($notification)) {

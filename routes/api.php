@@ -6,6 +6,7 @@ use App\Http\Controllers\StudentController;//Use StudentController
 use App\Http\Controllers\StudentProfileController;//Use StudentProfileController
 use App\Http\Controllers\NotifTypeController;//Use NotifTypeController
 use App\Http\Controllers\NotificationController;//Use NotificationController
+use App\Http\Controllers\DepartmentController;//Use DepartmentController
 
 
 /*
@@ -91,4 +92,23 @@ Route::put('updateNotification/{id}', [NotificationController::class, 'updateNot
 
 //Delete a specific notification in the 'notifications' table using the uniques ID. 
 Route::delete('deleteNotification/{id}', [NotificationController::class, 'deleteNotification']);
+
+
+
+//Department Table
+//Get all 'departments' table data. 
+Route::get('/departments', [DepartmentController::class, 'getDepartment']);
+
+//Get specific 'departments' table data using the unique ID. 
+Route::get('department/{id}', [DepartmentController::class, 'getDepartmentByID']);
+
+//Add department to the 'departments' table. 
+Route::post('addDepartment', [DepartmentController::class, 'addDepartment']);
+
+//Update a specific department in the 'departments' table using the uniques ID. 
+Route::put('updateDepartment/{id}', [DepartmentController::class, 'updateDepartment']);
+
+//Delete a specific department in the 'departments' table using the uniques ID. 
+Route::delete('deleteDepartment/{id}', [DepartmentController::class, 'deleteDepartment']);
+
 
