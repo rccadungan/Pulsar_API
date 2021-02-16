@@ -7,6 +7,7 @@ use App\Http\Controllers\StudentProfileController;//Use StudentProfileController
 use App\Http\Controllers\NotifTypeController;//Use NotifTypeController
 use App\Http\Controllers\NotificationController;//Use NotificationController
 use App\Http\Controllers\DepartmentController;//Use DepartmentController
+use App\Http\Controllers\ClearanceController;//Use ClearanceController
 
 
 /*
@@ -110,5 +111,23 @@ Route::put('updateDepartment/{id}', [DepartmentController::class, 'updateDepartm
 
 //Delete a specific department in the 'departments' table using the uniques ID. 
 Route::delete('deleteDepartment/{id}', [DepartmentController::class, 'deleteDepartment']);
+
+
+
+//Clearance Table
+//Get all 'clearances' table data. 
+Route::get('/clearances', [ClearanceController::class, 'getClearance']);
+
+//Get specific 'clearances' table data using the unique ID. 
+Route::get('clearance/{id}', [ClearanceController::class, 'getClearanceByID']);
+
+//Add clearance to the 'clearances' table. 
+Route::post('addClearance', [ClearanceController::class, 'addClearance']);
+
+//Update a specific learance in the 'clearances' table using the uniques ID. 
+Route::put('updateClearance/{id}', [ClearanceController::class, 'updateClearance']);
+
+//Delete a specific clearance in the 'clearances' table using the uniques ID. 
+Route::delete('deleteClearance/{id}', [ClearanceController::class, 'deleteClearance']);
 
 

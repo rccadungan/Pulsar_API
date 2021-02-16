@@ -15,7 +15,7 @@ class DepartmentController extends Controller
         //This public function will get specific 'departments' table data using the unique ID. 
         public function getDepartmentByID($id) {
             $department = Department::find($id);
-            if (is_null($Department)) {
+            if (is_null($department)) {
                 return response()->json(['message' => 'Department not found'], 404);
             }
             return response()->json($department::find($id), 200);
