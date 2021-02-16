@@ -8,6 +8,8 @@ use App\Http\Controllers\NotifTypeController;//Use NotifTypeController
 use App\Http\Controllers\NotificationController;//Use NotificationController
 use App\Http\Controllers\DepartmentController;//Use DepartmentController
 use App\Http\Controllers\ClearanceController;//Use ClearanceController
+use App\Http\Controllers\PreRegisteredSubjectDetailController;//Use PreRegisteredSubjectDetailController
+
 
 
 /*
@@ -124,10 +126,28 @@ Route::get('clearance/{id}', [ClearanceController::class, 'getClearanceByID']);
 //Add clearance to the 'clearances' table. 
 Route::post('addClearance', [ClearanceController::class, 'addClearance']);
 
-//Update a specific learance in the 'clearances' table using the uniques ID. 
+//Update a specific clearance in the 'clearances' table using the uniques ID. 
 Route::put('updateClearance/{id}', [ClearanceController::class, 'updateClearance']);
 
 //Delete a specific clearance in the 'clearances' table using the uniques ID. 
 Route::delete('deleteClearance/{id}', [ClearanceController::class, 'deleteClearance']);
+
+
+
+//Pre Registered Subject Details Table
+//Get all 'pre_registered_subject_details' table data. 
+Route::get('/preRegisteredSubjectDetails', [PreRegisteredSubjectDetailController::class, 'getPreRegisteredSubjectDetail']);
+
+//Get specific 'pre_registered_subject_details' table data using the unique ID. 
+Route::get('preRegisteredSubjectDetail/{id}', [PreRegisteredSubjectDetailController::class, 'getPreRegisteredSubjectDetailByID']);
+
+//Add pre registered subject detail to the 'pre_registered_subject_details' table. 
+Route::post('addPreRegisteredSubjectDetail', [PreRegisteredSubjectDetailController::class, 'addPreRegisteredSubjectDetail']);
+
+//Update a specific pre registered subject detail in the 'pre_registered_subject_details' table using the uniques ID. 
+Route::put('updatePreRegisteredSubjectDetail/{id}', [PreRegisteredSubjectDetailController::class, 'updatePreRegisteredSubjectDetail']);
+
+//Delete a specific pre registered subject detail in the 'pre_registered_subject_details' table using the uniques ID. 
+Route::delete('deletePreRegisteredSubjectDetail/{id}', [PreRegisteredSubjectDetailController::class, 'deletePreRegisteredSubjectDetail']);
 
 
