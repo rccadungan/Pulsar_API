@@ -11,6 +11,7 @@ use App\Http\Controllers\ClearanceController;//Use ClearanceController
 use App\Http\Controllers\PreRegisteredSubjectDetailController;//Use PreRegisteredSubjectDetailController
 use App\Http\Controllers\PreRegisteredSubjectController;//Use PreRegisteredSubjectController
 use App\Http\Controllers\TermController;//Use TermController
+use App\Http\Controllers\PreRegistrationController;//Use PreRegistrationController
 
 
 
@@ -187,3 +188,20 @@ Route::put('updateTerm/{id}', [TermController::class, 'updateTerm']);
 
 //Delete a specific term in the 'terms' table using the uniques ID. 
 Route::delete('deleteTerm//{id}', [TermController::class, 'deleteTerm']);
+
+
+//Pre-registration Table
+//Get all 'pre_registrations' table data. 
+Route::get('/preRegistrations', [PreRegistrationController::class, 'getPreRegistration']);
+
+//Get specific 'pre_registrations' table data using the unique ID. 
+Route::get('preRegistration/{id}', [PreRegistrationController::class, 'getPreRegistrationByID']);
+
+//Add pre-registration to the 'pre_registrations' table. 
+Route::post('addPreRegistration', [PreRegistrationController::class, 'addPreRegistration']);
+
+//Update a specific pre-registration in the 'pre_registrations' table using the uniques ID. 
+Route::put('updatePreRegistration/{id}', [PreRegistrationController::class, 'updatePreRegistration']);
+
+//Delete a specific pre-registration in the 'pre_registrations' table using the uniques ID. 
+Route::delete('deletePreRegistration//{id}', [PreRegistrationController::class, 'deletePreRegistration']);

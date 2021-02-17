@@ -16,7 +16,7 @@ class TermController extends Controller
         public function getTermByID($id) {
             $term = Term::find($id);
             if (is_null($term)) {
-                return response()->json(['message' => 'Pre-registered Subject not found'], 404);
+                return response()->json(['message' => 'Term not found'], 404);
             }
             return response()->json($term::find($id), 200);
         }
@@ -31,7 +31,7 @@ class TermController extends Controller
         public function updateTerm(Request $request, $id) {
             $term = Term::find($id);
             if (is_null($term)) {
-                return response()->json(['message' => 'Pre-registered Subject not found'], 404);
+                return response()->json(['message' => 'Term not found'], 404);
             }
             $term->update($request->all());
             return response($term, 200);
@@ -41,7 +41,7 @@ class TermController extends Controller
         public function deleteTerm(Request $request, $id) {
             $term = Term::find($id);
             if (is_null($term)) {
-                return response()->json(['message' => 'Pre-registered Subject not found'], 404);
+                return response()->json(['message' => 'Term not found'], 404);
             }
             $term ->delete();
             return response()->json(null, 204);
