@@ -12,7 +12,7 @@ use App\Http\Controllers\PreRegisteredSubjectDetailController;//Use PreRegistere
 use App\Http\Controllers\PreRegisteredSubjectController;//Use PreRegisteredSubjectController
 use App\Http\Controllers\TermController;//Use TermController
 use App\Http\Controllers\PreRegistrationController;//Use PreRegistrationController
-
+use App\Http\Controllers\OneTimePasswordController;//Use OneTimePasswordController
 
 
 /*
@@ -190,6 +190,7 @@ Route::put('updateTerm/{id}', [TermController::class, 'updateTerm']);
 Route::delete('deleteTerm//{id}', [TermController::class, 'deleteTerm']);
 
 
+
 //Pre-registration Table
 //Get all 'pre_registrations' table data. 
 Route::get('/preRegistrations', [PreRegistrationController::class, 'getPreRegistration']);
@@ -205,3 +206,22 @@ Route::put('updatePreRegistration/{id}', [PreRegistrationController::class, 'upd
 
 //Delete a specific pre-registration in the 'pre_registrations' table using the uniques ID. 
 Route::delete('deletePreRegistration//{id}', [PreRegistrationController::class, 'deletePreRegistration']);
+
+
+
+//One Time Password Table
+//Get all 'one_time_passwords' table data. 
+Route::get('/oneTimePasswords', [OneTimePasswordController::class, 'getOneTimePassword']);
+
+//Get specific 'one_time_passwords' table data using the unique ID. 
+Route::get('oneTimePassword/{id}', [OneTimePasswordController::class, 'getOneTimePasswordByID']);
+
+//Add one time password to the 'one_time_passwords' table. 
+Route::post('addOneTimePassword', [OneTimePasswordController::class, 'addOneTimePassword']);
+
+//Update a specific one time password in the 'one_time_passwords' table using the uniques ID. 
+Route::put('updateOneTimePassword/{id}', [OneTimePasswordController::class, 'updateOneTimePassword']);
+
+//Delete a specific one time password in the 'one_time_passwords' table using the uniques ID. 
+Route::delete('deleteOneTimePassword//{id}', [OneTimePasswordController::class, 'deleteOneTimePassword']);
+
