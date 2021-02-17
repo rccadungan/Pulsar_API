@@ -14,6 +14,7 @@ use App\Http\Controllers\TermController;//Use TermController
 use App\Http\Controllers\PreRegistrationController;//Use PreRegistrationController
 use App\Http\Controllers\OneTimePasswordController;//Use OneTimePasswordController
 use App\Http\Controllers\ScheduleController;//Use ScheduleController
+use App\Http\Controllers\AssessmentController;//Use AssessmentController
 
 
 /*
@@ -243,4 +244,22 @@ Route::put('updateSchedule/{id}', [ScheduleController::class, 'updateSchedule'])
 
 //Delete a specific one time schedule in the 'schedules' table using the uniques ID. 
 Route::delete('deleteSchedule/{id}', [ScheduleController::class, 'deleteSchedule']);
+
+
+
+//Assessment Table
+//Get all 'assessments' table data. 
+Route::get('/assessments', [AssessmentController::class, 'getAssessment']);
+
+//Get specific 'assessments' table data using the unique ID. 
+Route::get('assessment/{id}', [AssessmentController::class, 'getAssessmentByID']);
+
+//Add one time assessment to the 'assessments' table. 
+Route::post('addAssessment', [AssessmentController::class, 'addAssessment']);
+
+//Update a specific one time assessment in the 'assessments' table using the uniques ID. 
+Route::put('updateAssessment/{id}', [AssessmentController::class, 'updateAssessment']);
+
+//Delete a specific one time assessment in the 'assessments' table using the uniques ID. 
+Route::delete('deleteAssessment/{id}', [AssessmentController::class, 'deleteAssessment']);
 
