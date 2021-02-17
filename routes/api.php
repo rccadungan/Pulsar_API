@@ -13,6 +13,7 @@ use App\Http\Controllers\PreRegisteredSubjectController;//Use PreRegisteredSubje
 use App\Http\Controllers\TermController;//Use TermController
 use App\Http\Controllers\PreRegistrationController;//Use PreRegistrationController
 use App\Http\Controllers\OneTimePasswordController;//Use OneTimePasswordController
+use App\Http\Controllers\ScheduleController;//Use ScheduleController
 
 
 /*
@@ -187,7 +188,7 @@ Route::post('addTerm', [TermController::class, 'addTerm']);
 Route::put('updateTerm/{id}', [TermController::class, 'updateTerm']);
 
 //Delete a specific term in the 'terms' table using the uniques ID. 
-Route::delete('deleteTerm//{id}', [TermController::class, 'deleteTerm']);
+Route::delete('deleteTerm/{id}', [TermController::class, 'deleteTerm']);
 
 
 
@@ -205,7 +206,7 @@ Route::post('addPreRegistration', [PreRegistrationController::class, 'addPreRegi
 Route::put('updatePreRegistration/{id}', [PreRegistrationController::class, 'updatePreRegistration']);
 
 //Delete a specific pre-registration in the 'pre_registrations' table using the uniques ID. 
-Route::delete('deletePreRegistration//{id}', [PreRegistrationController::class, 'deletePreRegistration']);
+Route::delete('deletePreRegistration/{id}', [PreRegistrationController::class, 'deletePreRegistration']);
 
 
 
@@ -223,5 +224,23 @@ Route::post('addOneTimePassword', [OneTimePasswordController::class, 'addOneTime
 Route::put('updateOneTimePassword/{id}', [OneTimePasswordController::class, 'updateOneTimePassword']);
 
 //Delete a specific one time password in the 'one_time_passwords' table using the uniques ID. 
-Route::delete('deleteOneTimePassword//{id}', [OneTimePasswordController::class, 'deleteOneTimePassword']);
+Route::delete('deleteOneTimePassword/{id}', [OneTimePasswordController::class, 'deleteOneTimePassword']);
+
+
+
+//Schedule Table
+//Get all 'schedules' table data. 
+Route::get('/schedules', [ScheduleController::class, 'getSchedule']);
+
+//Get specific 'schedules' table data using the unique ID. 
+Route::get('schedule/{id}', [ScheduleController::class, 'getScheduleByID']);
+
+//Add one time schedule to the 'schedules' table. 
+Route::post('addSchedule', [ScheduleController::class, 'addSchedule']);
+
+//Update a specific one time schedule in the 'schedules' table using the uniques ID. 
+Route::put('updateSchedule/{id}', [ScheduleController::class, 'updateSchedule']);
+
+//Delete a specific one time schedule in the 'schedules' table using the uniques ID. 
+Route::delete('deleteSchedule/{id}', [ScheduleController::class, 'deleteSchedule']);
 
