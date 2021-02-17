@@ -10,6 +10,7 @@ use App\Http\Controllers\DepartmentController;//Use DepartmentController
 use App\Http\Controllers\ClearanceController;//Use ClearanceController
 use App\Http\Controllers\PreRegisteredSubjectDetailController;//Use PreRegisteredSubjectDetailController
 use App\Http\Controllers\PreRegisteredSubjectController;//Use PreRegisteredSubjectController
+use App\Http\Controllers\TermController;//Use TermController
 
 
 
@@ -168,3 +169,21 @@ Route::put('updatePreRegisteredSubject/{id}', [PreRegisteredSubjectController::c
 
 //Delete a specific pre registered subject in the 'pre_registered_subjects' table using the uniques ID. 
 Route::delete('deletePreRegisteredSubject/{id}', [PreRegisteredSubjectController::class, 'deletePreRegisteredSubject']);
+
+
+
+//Term Table
+//Get all 'terms' table data. 
+Route::get('/terms', [TermController::class, 'getTerm']);
+
+//Get specific 'terms' table data using the unique ID. 
+Route::get('term/{id}', [TermController::class, 'getTermByID']);
+
+//Add term to the 'terms' table. 
+Route::post('addTerm', [TermController::class, 'addTerm']);
+
+//Update a specific term in the 'terms' table using the uniques ID. 
+Route::put('updateTerm/{id}', [TermController::class, 'updateTerm']);
+
+//Delete a specific term in the 'terms' table using the uniques ID. 
+Route::delete('deleteTerm//{id}', [TermController::class, 'deleteTerm']);
