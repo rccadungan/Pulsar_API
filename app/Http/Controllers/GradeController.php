@@ -9,12 +9,12 @@ class GradeController extends Controller
 {
         //This public function will get all the 'grades' table data. 
         public function getGrade() {
-            return response()->json(Grade::all(), 200);
+            return response()->json(Grades::all(), 200);
         }
     
         //This public function will get specific 'grades' table data using the unique ID. 
         public function getGradeByID($id) {
-            $grade = Grade::find($id);
+            $grade = Grades::find($id);
             if (is_null($grade)) {
                 return response()->json(['message' => 'Grade not found'], 404);
             }
@@ -23,13 +23,13 @@ class GradeController extends Controller
         
         //This public function will add new grade to the 'grades' table.
         public function addGrade(Request $request) {
-            $grade = Grade::create($request->all());
+            $grade = Grades::create($request->all());
             return response()->json($grade, 201);
         }
     
         //This public function will update a specific grade to the 'grades' table using the unique ID.
         public function updateGrade(Request $request, $id) {
-            $grade = Grade::find($id);
+            $grade = Grades::find($id);
             if (is_null($grade)) {
                 return response()->json(['message' => 'Grade not found'], 404);
             }
@@ -39,7 +39,7 @@ class GradeController extends Controller
     
         //This function will delete a specific grade in the 'grades' table. 
         public function deleteGrade(Request $request, $id) {
-            $grade = Grade::find($id);
+            $grade = Grades::find($id);
             if (is_null($grade)) {
                 return response()->json(['message' => 'Grade not found'], 404);
             }
