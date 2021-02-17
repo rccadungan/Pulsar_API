@@ -9,6 +9,7 @@ use App\Http\Controllers\NotificationController;//Use NotificationController
 use App\Http\Controllers\DepartmentController;//Use DepartmentController
 use App\Http\Controllers\ClearanceController;//Use ClearanceController
 use App\Http\Controllers\PreRegisteredSubjectDetailController;//Use PreRegisteredSubjectDetailController
+use App\Http\Controllers\PreRegisteredSubjectController;//Use PreRegisteredSubjectController
 
 
 
@@ -151,3 +152,19 @@ Route::put('updatePreRegisteredSubjectDetail/{id}', [PreRegisteredSubjectDetailC
 Route::delete('deletePreRegisteredSubjectDetail/{id}', [PreRegisteredSubjectDetailController::class, 'deletePreRegisteredSubjectDetail']);
 
 
+
+//Pre Registered Subjects Table
+//Get all 'pre_registered_subjects' table data. 
+Route::get('/preRegisteredSubjects', [PreRegisteredSubjectController::class, 'getPreRegisteredSubject']);
+
+//Get specific 'pre_registered_subjects' table data using the unique ID. 
+Route::get('preRegisteredSubject/{id}', [PreRegisteredSubjectController::class, 'getPreRegisteredSubjectByID']);
+
+//Add pre registered subject to the 'pre_registered_subjects' table. 
+Route::post('addPreRegisteredSubject', [PreRegisteredSubjectController::class, 'addPreRegisteredSubject']);
+
+//Update a specific pre registered subject in the 'pre_registered_subjects' table using the uniques ID. 
+Route::put('updatePreRegisteredSubject/{id}', [PreRegisteredSubjectController::class, 'updatePreRegisteredSubject']);
+
+//Delete a specific pre registered subject in the 'pre_registered_subjects' table using the uniques ID. 
+Route::delete('deletePreRegisteredSubject/{id}', [PreRegisteredSubjectController::class, 'deletePreRegisteredSubject']);
