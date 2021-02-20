@@ -21,7 +21,7 @@ class CreateStudentProfilesTable extends Migration
             $table->date('birthdate'); //Y-m-d is the default date format for mysql date type.
             $table->string('birth_place', 100);
             $table->string('religion', 50);
-            $table->integer('student_id')->unsigned(); //This will contain the value of the 'id' of the student from the 'Students' table. 
+            $table->integer('student_id')->unsigned()->nullable(); //This will contain the value of the 'id' of the student from the 'Students' table. 
             $table->foreign('student_id')->references('id')->on('students'); 
             $table->timestamps();
         });
