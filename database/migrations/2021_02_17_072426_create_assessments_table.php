@@ -22,10 +22,10 @@ class CreateAssessmentsTable extends Migration
             $table->string('payment_desc', 200);
             $table->double('total_amount', 10, 2);
             $table->double('credit_units', 10, 2);
-            $table->integer('student_id')->unsigned(); //This will contain the  value of the 'id' of the student from the 'Students' table.
-            $table->integer('one_time_password_id')->unsigned(); //This will contain the value of the 'id' of the one time password from the 'One Time Password' table.
-            $table->integer('schedule_id')->unsigned(); //This will contain the value of the 'id' of the schedule from the 'Schedules' table.
-            $table->integer('term_id')->unsigned(); //This will contain the value of the 'id' of the term from the 'Term' table.
+            $table->integer('student_id')->unsigned()->nullable(); //This will contain the  value of the 'id' of the student from the 'Students' table.
+            $table->integer('one_time_password_id')->unsigned()->nullable(); //This will contain the value of the 'id' of the one time password from the 'One Time Password' table.
+            $table->integer('schedule_id')->unsigned()->nullable(); //This will contain the value of the 'id' of the schedule from the 'Schedules' table.
+            $table->integer('term_id')->unsigned()->nullable(); //This will contain the value of the 'id' of the term from the 'Term' table.
             $table->foreign('student_id')->references('id')->on('students'); 
             $table->foreign('one_time_password_id')->references('id')->on('one_time_passwords'); 
             $table->foreign('schedule_id')->references('id')->on('schedules'); 
