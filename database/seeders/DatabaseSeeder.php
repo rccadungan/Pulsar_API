@@ -17,5 +17,6 @@ class DatabaseSeeder extends Seeder
         $this->call(StudentProfileTableSeeder::class); //Call the StudentProfileTableSeeder class.
         $this->call(NotifTypeTableSeeder::class); //Call the NotifTypeTableSeeder class.
         $this->call(NotificationTableSeeder::class); //Call the NotificationTableSeeder class.
+        $this->call(DepartmentTableSeeder::class); //Call the DepartmentTableSeeder class.
     }
 }
