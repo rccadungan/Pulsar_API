@@ -9,6 +9,16 @@ class Student extends Model
 {
     use HasFactory;
     //public $timestamps = false; 
-    //Added 'Student' table columns to fillable property to allow mass assignment.
-    protected $fillable = ['id','student_no', 'fname', 'lname', 'email', 'username', 'password', 'created_at', 'updated_at']; 
+    //Added 'students' table columns to fillable property to allow mass assignment.
+    protected $fillable = [
+        'id',
+        'student_no', 
+        'fname', 
+        'lname', 
+        'email', 
+        'username', 
+        'password', 
+        'created_at', 
+        'updated_at'
+    ]; 
 }
