@@ -21,5 +21,6 @@ class DatabaseSeeder extends Seeder
         $this->call(ClearanceTableSeeder::class); //Call the DepartmentTableSeeder class.
         $this->call(PreRegisteredSubjectDetailTableSeeder::class); //Call the PreRegisteredSubjectDetailTableSeeder class.
         $this->call(PreRegisteredSubjectTableSeeder::class); //Call the PreRegisteredSubjectTableSeeder class.
+        $this->call(TermTableSeeder::class); //Call the TermTableSeeder class.
     }
 }
