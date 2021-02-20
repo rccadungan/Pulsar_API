@@ -23,5 +23,6 @@ class DatabaseSeeder extends Seeder
         $this->call(PreRegisteredSubjectTableSeeder::class); //Call the PreRegisteredSubjectTableSeeder class.
         $this->call(TermTableSeeder::class); //Call the TermTableSeeder class.
         $this->call(PreRegistrationTableSeeder::class); //Call the PreRegistrationTableSeeder class.
+        $this->call(OneTimePasswordTableSeeder::class); //Call the PreRegistrationTableSeeder class.
     }
 }
