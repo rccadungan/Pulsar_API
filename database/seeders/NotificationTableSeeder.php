@@ -15,7 +15,7 @@ class NotificationTableSeeder extends Seeder
      */
     public function run()
     {
-        //Insert data into the 'student_profiles' table
+        //Insert data into the 'notifications' table
         DB::table('notifications')->insert([
             [
                 'notif_date_time' => '2020-12-20 14:22:58',

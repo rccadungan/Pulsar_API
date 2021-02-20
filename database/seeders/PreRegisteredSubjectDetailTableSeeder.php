@@ -15,7 +15,7 @@ class PreRegisteredSubjectDetailTableSeeder extends Seeder
      */
     public function run()
     {
-        //Insert data into the 'student_profiles' table
+        //Insert data into the 'pre_registered_subject_details' table
         DB::table('pre_registered_subject_details')->insert([
             [
                 'time' => '1:00 PM - 5:00 PM',

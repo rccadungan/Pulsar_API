@@ -15,7 +15,7 @@ class PreRegisteredSubjectTableSeeder extends Seeder
      */
     public function run()
     {
-        //Insert data into the 'student_profiles' table
+        //Insert data into the 'pre_registered_subjects' table
         DB::table('pre_registered_subjects')->insert([
             [
                 'subject_code' => 'ITCONCE',

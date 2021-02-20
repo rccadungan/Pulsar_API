@@ -15,7 +15,7 @@ class NotifTypeTableSeeder extends Seeder
      */
     public function run()
     {
-        //Insert data into the 'student_profiles' table
+        //Insert data into the 'notif_types' table
         DB::table('notif_types')->insert([
             [
                 'notif_type_desc' => 'College Enrollment',

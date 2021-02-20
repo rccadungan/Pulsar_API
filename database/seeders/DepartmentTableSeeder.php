@@ -15,7 +15,7 @@ class DepartmentTableSeeder extends Seeder
      */
     public function run()
     {
-        //Insert data into the 'student_profiles' table
+        //Insert data into the 'departments' table
         DB::table('departments')->insert([
             [
                 'dept_name' => 'Discipline Office',

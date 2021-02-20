@@ -15,7 +15,7 @@ class ClearanceTableSeeder extends Seeder
      */
     public function run()
     {
-        //Insert data into the 'student_profiles' table
+        //Insert data into the 'clearances' table
         DB::table('clearances')->insert([
             [
                 'violation_desc' => 'Dress Code',
