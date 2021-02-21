@@ -20,7 +20,7 @@ class AssessmentTableSeeder extends Seeder
             [
                 'scholarship_code' => 'Public HS Graduate',
                 'assessment_term' => '1', 
-                'assessment_course' => 'BSIT - MI', 
+                'assessment_course' => 'BSIT-MI', 
                 'payment_method' => 'Bank Transfer', 
                 'payment_desc' => "Transfer payment to APC's account via bank.", 
                 'total_amount' => '26,000', 
@@ -36,7 +36,7 @@ class AssessmentTableSeeder extends Seeder
             [
                 'scholarship_code' => 'None',
                 'assessment_term' => '1', 
-                'assessment_course' => 'BSIT - MI', 
+                'assessment_course' => 'BSIT-MI', 
                 'payment_method' => 'SM Bills Payment', 
                 'payment_desc' => "Pay the tuition fee via SM Bills Payment.", 
                 'total_amount' => '56,835', 
@@ -52,7 +52,7 @@ class AssessmentTableSeeder extends Seeder
             [
                 'scholarship_code' => 'Public HS Graduate',
                 'assessment_term' => '2', 
-                'assessment_course' => 'BSIT - MI', 
+                'assessment_course' => 'BSIT-MI', 
                 'payment_method' => 'Bank Transfer', 
                 'payment_desc' => "Transfer payment to APC's account via bank.", 
                 'total_amount' => '30,986', 
