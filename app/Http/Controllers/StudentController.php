@@ -9,42 +9,71 @@ class StudentController extends Controller
 {
         //This public function will get all the 'students' table data. 
         public function getStudent() {
-            return response()->json(Student::all(), 200);
+            return response()->json([
+                'success' => true,
+                'statusCode' => 200,
+                'message' => 'Successfully retrieved students data',
+                'data' => Student::all()]);
         }
     
         //This public function will get specific 'students' table data using the unique ID. 
         public function getStudentById($id) {
             $student = Student::find($id);
             if (is_null($student)) {
-                return response()->json(['message' => 'Student not found'], 404);
+                return response()->json([
+                    'success' => false,
+                    'statusCode' => 404,
+                    'message' => 'Student not found']);
             }
-            return response()->json($student::find($id), 200);
+            return response()->json([
+                'success' => true,
+                'statusCode' => 200,
+                'message' => 'Successfully retrieved student data',
+                'data' => $student::find($id)]);
         }
         
         //This public function will add new student data to the 'students' table.
         public function addStudent(Request $request) {
             $student = Student::create($request->all());
-            return response()->json($student, 201);
+            return response()->json([
+                'success' => true,
+                'statusCode' => 201,
+                'message' => 'Successfully added student',
+                'data' => $student]);
         }
     
         //This public function will update a specific student data to the 'students' table using the unique ID.
         public function updateStudent(Request $request, $id) {
             $student = Student::find($id);
             if (is_null($student)) {
-                return response()->json(['message' => 'Student not found'], 404);
+                return response()->json([
+                    'success' => false,
+                    'statusCode' => 404,
+                    'message' => 'Student not found']);
             }
             $student->update($request->all());
-            return response($student, 200);
+            return response([
+                'success' => true,
+                'statusCode' => 200,
+                'message' => 'Successfully updated student data',
+                'data' => $student]);
         }
     
         //This function will delete a specific student data in the 'students' table. 
         public function deleteStudent(Request $request, $id) {
             $student = Student::find($id);
             if (is_null($student)) {
-                return response()->json(['message' => 'Student not found'], 404);
+                return response()->json([
+                    'success' => false,
+                    'statusCode' => 404,
+                    'message' => 'Student not found']);
             }
             $student->delete();
-            return response()->json(null, 204);
+            return response()->json([
+                'success' => true,
+                'statusCode' => 204,
+                'message' => 'Successfully deleted student data',
+                'data' => null]);
         }
     
 }
