@@ -17,7 +17,7 @@ class CreatePreRegisteredSubjectsTable extends Migration
             $table->increments('id');
             $table->string('subject_code', 20); 
             $table->string('subject_desc', 200); 
-            $table->double('credit_units', 10, 2);
+            $table->double('credit_units', 10, 1);
             $table->string('section', 50); 
             $table->integer('prd_subject_details_id')->unsigned()->nullable(); //This will contain the value of the 'id' of the pre registered subject detail from the 'Pre Registered Subject Details' table.
             $table->foreign('prd_subject_details_id')->references('id')->on('pre_registered_subject_details'); 
