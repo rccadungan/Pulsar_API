@@ -13,7 +13,7 @@ class NotifTypeController extends Controller
                 'success' => true,
                 'statusCode' => 200,
                 'message' => 'Successfully retrieved notifications types',
-                'data' =>NotifType::all()]);
+                'data' => NotifType::all()]);
         }
     
         //This public function will get specific 'notif_types' table data using the unique ID. 
