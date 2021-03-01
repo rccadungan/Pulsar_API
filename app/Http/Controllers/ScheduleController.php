@@ -10,41 +10,70 @@ class ScheduleController extends Controller
 {
         //This public function will get all the 'schedules' table data. 
         public function getSchedule() {
-            return response()->json(Schedule::all(), 200);
+            return response()->json([
+                'success' => true,
+                'statusCode' => 200,
+                'message' => 'Successfully retrieved students schedules',
+                'data' => Schedule::all()]);
         }
     
         //This public function will get specific 'schedules' table data using the unique ID. 
         public function getScheduleByID($id) {
             $schedule = Schedule::find($id);
             if (is_null($schedule)) {
-                return response()->json(['message' => 'Schedule not found'], 404);
+                return response()->json([
+                    'success' => false,
+                    'statusCode' => 404,
+                    'message' => 'Schedule not found']);
             }
-            return response()->json($schedule::find($id), 200);
+            return response()->json([
+                'success' => true,
+                'statusCode' => 200,
+                'message' => 'Successfully retrieved student schedule',
+                'data' => $schedule::find($id)]);
         }
         
         //This public function will add new schedule to the 'schedules' table.
         public function addSchedule(Request $request) {
             $schedule = Schedule::create($request->all());
-            return response()->json($schedule, 201);
+            return response()->json([
+                'success' => true,
+                'statusCode' => 201,
+                'message' => 'Successfully added student schedule',
+                'data' => $schedule]);
         }
     
         //This public function will update a specific schedule to the 'schedules' table using the unique ID.
         public function updateSchedule(Request $request, $id) {
             $schedule = Schedule::find($id);
             if (is_null($schedule)) {
-                return response()->json(['message' => 'Schedule not found'], 404);
+                return response()->json([
+                    'success' => false,
+                    'statusCode' => 404,
+                    'message' => 'Schedule not found']);
             }
             $schedule->update($request->all());
-            return response($schedule, 200);
+            return response([
+                'success' => true,
+                'statusCode' => 200,
+                'message' => 'Successfully updated student schedule',
+                'data' => $schedule]);
         }
     
         //This function will delete a specific schedule in the 'schedules' table. 
         public function deleteSchedule(Request $request, $id) {
             $schedule = Schedule::find($id);
             if (is_null($schedule)) {
-                return response()->json(['message' => 'Schedule not found'], 404);
+                return response()->json([
+                    'success' => false,
+                    'statusCode' => 404,
+                    'message' => 'Schedule not found']);
             }
             $schedule ->delete();
-            return response()->json(null, 204);
+            return response()->json([
+                'success' => true,
+                'statusCode' => 204,
+                'message' => 'Successfully deleted student schedule',
+                'data' => null]);
         }
 }
