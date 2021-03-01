@@ -20,8 +20,8 @@ class CreateAssessmentsTable extends Migration
             $table->string('assessment_course', 100); 
             $table->string('payment_method', 100);
             $table->string('payment_desc', 200);
-            $table->double('total_amount', 10, 2);
-            $table->double('credit_units', 10, 2);
+            $table->double('total_amount', 10, 1);
+            $table->double('credit_units', 10, 1);
             $table->integer('student_id')->unsigned()->nullable(); //This will contain the  value of the 'id' of the student from the 'Students' table.
             $table->integer('one_time_password_id')->unsigned()->nullable(); //This will contain the value of the 'id' of the one time password from the 'One Time Password' table.
             $table->integer('schedule_id')->unsigned()->nullable(); //This will contain the value of the 'id' of the schedule from the 'Schedules' table.
