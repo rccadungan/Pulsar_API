@@ -54,7 +54,7 @@ class AssessmentController extends Controller
             $assessment->update($request->all());
             return response([
                 'success' => true,
-                'statusCode' => 201,
+                'statusCode' => 200,
                 'message' => 'Successfully updated student assessment',
                 'data' => $assessment]);
         }
