@@ -66,6 +66,9 @@ Route::put('updateStudentProfile/{id}', [StudentProfileController::class, 'updat
 //Delete a specific student data in the 'students_profiles' table using the unique ID. 
 Route::delete('deleteStudentProfile/{id}', [StudentProfileController::class, 'deleteStudentProfile']);
 
+//Upload student image.
+Route::post('images', [StudentProfileController::class, 'uploadImage']);
+
 
 
 //Notif Type Table

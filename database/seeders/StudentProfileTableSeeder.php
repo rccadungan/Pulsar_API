@@ -24,6 +24,7 @@ class StudentProfileTableSeeder extends Seeder
                 'birthdate' => '2002-03-15',
                 'birth_place' => 'Manila City',
                 'religion' => 'Catholic', 
+                'image' => 'student_1_no_2020396789.jpg',
                 'student_id' => '1',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
@@ -36,6 +37,7 @@ class StudentProfileTableSeeder extends Seeder
                 'birthdate' => '2001-5-5',
                 'birth_place' => 'Makati City',
                 'religion' => 'Catholic', 
+                'image' => 'student_2_no_2019200129.jpg',
                 'student_id' => '2',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
@@ -48,6 +50,7 @@ class StudentProfileTableSeeder extends Seeder
                 'birthdate' => '1999-11-20',
                 'birth_place' => 'Manila City',
                 'religion' => 'Islam', 
+                'image' => 'student_3_no_2018112382.jpg',
                 'student_id' => '3',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')

@@ -75,4 +75,11 @@ class StudentProfileController extends Controller
                 'message' => 'Successfully deleted student profile',
                 'data' => null]);
         }
+
+        //This function allows to upload the student image. 
+        public function uploadImage(Request $request) {
+            $result = $request->file('image')->store('public');
+            return ['result' => $result];
+
+        }
 }
