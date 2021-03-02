@@ -27,7 +27,6 @@ class GradesTableSeeder extends Seeder
                 'num_average' => '92', 
                 'student_id' => '1', 
                 'term_id' => '1', 
-                'pre_registered_subject_id' => '1', 
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
             ],
@@ -42,7 +41,6 @@ class GradesTableSeeder extends Seeder
                 'num_average' => '98', 
                 'student_id' => '2', 
                 'term_id' => '2', 
-                'pre_registered_subject_id' => '2', 
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
             ],
@@ -57,7 +55,6 @@ class GradesTableSeeder extends Seeder
                 'num_average' => '99', 
                 'student_id' => '3', 
                 'term_id' => '3', 
-                'pre_registered_subject_id' => '3', 
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
             ],
