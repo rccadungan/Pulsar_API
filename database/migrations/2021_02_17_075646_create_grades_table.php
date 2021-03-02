@@ -17,11 +17,13 @@ class CreateGradesTable extends Migration
             $table->increments('id');
             $table->string('subject_code', 20); 
             $table->string('subject_desc', 200); 
-            $table->double('grade', 10, 1);
-            $table->integer('num_grade');
+            $table->double('midterm_grade', 10, 1);
+            $table->integer('midterm_num_grade');
+            $table->double('finals_grade', 10, 1);
+            $table->integer('finals_num_grade');
             $table->double('credit_units', 10, 1);
-            $table->double('average', 10, 1);
-            $table->integer('num_average');
+            $table->double('term_grade', 10, 1);
+            $table->integer('num_term_grade');
             $table->integer('student_id')->unsigned()->nullable(); //This will contain the value of the 'id' of the student from the 'Students' table.
             $table->integer('term_id')->unsigned()->nullable(); //This will contain the value of the 'id' of the term from the 'Term' table.
             $table->foreign('student_id')->references('id')->on('students'); 
