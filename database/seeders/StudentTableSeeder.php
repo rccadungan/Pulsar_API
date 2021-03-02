@@ -19,18 +19,18 @@ class StudentTableSeeder extends Seeder
         //Insert data into the 'students' table
         DB::table('students')->insert([
             [
-                'student_no' => '2021-396789',
+                'student_no' => '2020-396789',
                 'fname' => 'Bea',
-                'lname' => 'Ram',
-                'email' => 'bearam@student.apc.edu.ph',
-                'username' => 'bear',
+                'lname' => 'Mariano',
+                'email' => 'beamariano@student.apc.edu.ph',
+                'username' => 'bmariano',
                 'password' => Hash::make('bearam01'), 
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
             ],
 
             [
-                'student_no' => '2020-200129',
+                'student_no' => '2019-200129',
                 'fname' => 'Juan',
                 'lname' => 'Dela Cruz',
                 'email' => 'jdelacruz@student.apc.edu.ph',
@@ -42,10 +42,10 @@ class StudentTableSeeder extends Seeder
 
             [
                 'student_no' => '2018-112382',
-                'fname' => 'Sam',
-                'lname' => 'Gy',
-                'email' => 'sgy@student.apc.edu.ph',
-                'username' => 'sgy',
+                'fname' => 'Samboy',
+                'lname' => 'Rivera',
+                'email' => 'srivera@student.apc.edu.ph',
+                'username' => 'srivera',
                 'password' => Hash::make('sgy45asd541d'), 
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
