@@ -18,6 +18,7 @@ class StudentProfile extends Model
         'birthdate', 
         'birth_place', 
         'religion', 
+        'image',
         'student_id', 
         'created_at', 
         'updated_at'
