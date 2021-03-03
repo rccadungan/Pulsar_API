@@ -54,7 +54,20 @@ class StudentProfileTableSeeder extends Seeder
                 'student_id' => '3',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
-            ]
+            ],
+
+            [
+                'address' => 'Sta.Ana, Taguig City',
+                'contact_no' => '0908-139-4578',
+                'course' => 'Bachelor of Multimedia Arts',
+                'birthdate' => '2000-04-14',
+                'birth_place' => 'Taguig City',
+                'religion' => 'Born Again', 
+                'image' => 'student_4_no_2020-212121.jpg',
+                'student_id' => '4',
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
+            ],
         ]);
     }
 }

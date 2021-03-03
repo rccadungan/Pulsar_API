@@ -211,6 +211,77 @@ class PreRegisteredSubjectTableSeeder extends Seeder
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
             ],
+
+            //Student 4 data (2020-212121)
+            [
+                'subject_code' => 'GDESIGN',
+                'subject_desc' => 'Graphic Design',
+                'credit_units' => '3.0',
+                'section' => 'BMMA-182',
+                'prd_subject_details_id' => '20',
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s')                
+            ],
+
+            [
+                'subject_code' => 'LDRAWNG',
+                'subject_desc' => 'Life drawing',
+                'credit_units' => '3.0',
+                'section' => 'BMMA-182',
+                'prd_subject_details_id' => '21',
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s')                
+            ],
+
+            [
+                'subject_code' => 'ITCONCE',
+                'subject_desc' => 'Information Technology Concepts',
+                'credit_units' => '3.0',
+                'section' => 'BMMA-182',
+                'prd_subject_details_id' => '22',
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s')      
+            ],
+
+            [
+                'subject_code' => 'MATWORL',
+                'subject_desc' => 'Mathematics in the Modern World',
+                'credit_units' => '3.0',
+                'section' => 'BMMA-182',
+                'prd_subject_details_id' => '23',
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
+            ],
+
+            [
+                'subject_code' => 'SCITECS',
+                'subject_desc' => 'Science Technology and Society',
+                'credit_units' => '3.0',
+                'section' => 'BMMA-182',
+                'prd_subject_details_id' => '24',
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s')                
+            ],
+
+            [
+                'subject_code' => 'ARTAPRE',
+                'subject_desc' => 'Art Appreciation',
+                'credit_units' => '3.0',
+                'section' => 'BMMA-182',
+                'prd_subject_details_id' => '25',
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s')              
+            ],
+
+            [
+                'subject_code' => 'PEDUTWO',
+                'subject_desc' => 'Physical Education 2',
+                'credit_units' => '2.0',
+                'section' => 'BMMA-182',
+                'prd_subject_details_id' => '26',
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s') 
+            ],
         ]);
     }
 }

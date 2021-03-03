@@ -41,6 +41,14 @@ class NotificationTableSeeder extends Seeder
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
             ],
 
+            [
+                'notif_date_time' => '2020-12-20 9:36:27',
+                'notif_type_id' => '4',
+                'student_id' => '4',
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
+            ],
+
         ]);
     }
 }

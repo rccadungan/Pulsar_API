@@ -49,7 +49,18 @@ class StudentTableSeeder extends Seeder
                 'password' => Hash::make('sgy45asd541d'), 
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
-            ]
-            ]);
+            ],
+
+            [
+                'student_no' => '2020-212121',
+                'fname' => 'Frances',
+                'lname' => 'Castillo',
+                'email' => 'fcastillo@student.apc.edu.ph',
+                'username' => 'fcastillo',
+                'password' => Hash::make('frances'), 
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
+            ],
+        ]);
     }
 }

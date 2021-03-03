@@ -185,7 +185,7 @@ class PreRegisteredSubjectDetailTableSeeder extends Seeder
                 'day' => 'Tuesday, Friday',
                 'room_no' => '312',
                 'instructor_name' => 'Ms. Rhea Pia',
-                'remarks' => 'Reasons',
+                'remarks' => 'None',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
             ],
@@ -196,7 +196,7 @@ class PreRegisteredSubjectDetailTableSeeder extends Seeder
                 'day' => 'Tuesday, Friday',
                 'room_no' => '312',
                 'instructor_name' => 'Mr. Joshua Santos',
-                'remarks' => 'Reasons',
+                'remarks' => 'None',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
             ],
@@ -206,8 +206,8 @@ class PreRegisteredSubjectDetailTableSeeder extends Seeder
                 'time' => '7:30 AM - 11:30 AM',
                 'day' => 'Wednesday',
                 'room_no' => '202',
-                'instructor_name' => 'Ms. Jeniffer Ali',
-                'remarks' => 'Reasons',
+                'instructor_name' => 'Ms. Jen Taylor',
+                'remarks' => 'None',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
             ],
@@ -218,7 +218,7 @@ class PreRegisteredSubjectDetailTableSeeder extends Seeder
                 'day' => 'Monday, Thursday',
                 'room_no' => '808',
                 'instructor_name' => 'Mr. Jose Cruz',
-                'remarks' => 'Reasons',
+                'remarks' => 'None',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
             ],
@@ -229,7 +229,85 @@ class PreRegisteredSubjectDetailTableSeeder extends Seeder
                 'day' => 'Monday, Thursday',
                 'room_no' => '514',
                 'instructor_name' => 'Ms. Jeniffer Ali',
-                'remarks' => 'Reasons',
+                'remarks' => 'None',
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
+            ],
+
+            //Student 4 data (2020-212121)
+            //GDESIGN
+            [
+                'time' => '7:30 AM - 9:30 AM',
+                'day' => 'Monday, Thursday',
+                'room_no' => '608',
+                'instructor_name' => 'Mr. Ryan Bass',
+                'remarks' => 'None',
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
+            ],
+
+            //LDRAWNG
+            [
+                'time' => '9:30 AM - 11:30 AM',
+                'day' => 'Monday, Thursday',
+                'room_no' => '608',
+                'instructor_name' => 'Mr. Ludwig Kim',
+                'remarks' => 'None',
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
+            ],
+
+            //ITCONCE
+            [
+                'time' => '7:30 AM - 9:30 AM',
+                'day' => 'Tuesday, Friday',
+                'room_no' => '512',
+                'instructor_name' => 'Ms. Jenliyn Adarna',
+                'remarks' => 'None',
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
+            ],
+
+            //MATWORL
+            [
+                'time' => '11:30 AM - 1:30 PM',
+                'day' => 'Tuesday, Friday',
+                'room_no' => '812',
+                'instructor_name' => 'Ms. Ali Yana',
+                'remarks' => 'None',
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
+            ],
+
+            //SCITECS
+            [
+                'time' => '1:30 PM - 3:30 PM',
+                'day' => 'Tuesday, Friday',
+                'room_no' => '812',
+                'instructor_name' => 'Ms. Anne Smith',
+                'remarks' => 'None',
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
+            ],
+
+            //ARTAPRE
+            [
+                'time' => '7:30 AM - 9:30 AM',
+                'day' => 'Wednesday',
+                'room_no' => '308',
+                'instructor_name' => 'Mr. Cardo Dalisay',
+                'remarks' => 'None',
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
+            ],
+
+            //PEDUTWO
+            [
+                'time' => '1:30 PM - 3:30 PM',
+                'day' => 'Wednesday',
+                'room_no' => 'GYM',
+                'instructor_name' => 'Mr. Vhong Navarette',
+                'remarks' => 'None',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
             ],

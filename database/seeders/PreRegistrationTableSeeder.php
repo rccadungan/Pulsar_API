@@ -78,7 +78,7 @@ class PreRegistrationTableSeeder extends Seeder
 
             //Student 2 data (2019-200129)
             [
-                'student_id' => '1',
+                'student_id' => '2',
                 'term_id' => '8',
                 'pre_registered_subject_id' => '8',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
@@ -86,7 +86,7 @@ class PreRegistrationTableSeeder extends Seeder
             ],
 
             [
-                'student_id' => '1',
+                'student_id' => '2',
                 'term_id' => '8',
                 'pre_registered_subject_id' => '9',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
@@ -94,7 +94,7 @@ class PreRegistrationTableSeeder extends Seeder
             ],
 
             [
-                'student_id' => '1',
+                'student_id' => '2',
                 'term_id' => '8',
                 'pre_registered_subject_id' => '10',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
@@ -102,7 +102,7 @@ class PreRegistrationTableSeeder extends Seeder
             ],
 
             [
-                'student_id' => '1',
+                'student_id' => '2',
                 'term_id' => '8',
                 'pre_registered_subject_id' => '11',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
@@ -110,7 +110,7 @@ class PreRegistrationTableSeeder extends Seeder
             ],
 
             [
-                'student_id' => '1',
+                'student_id' => '2',
                 'term_id' => '8',
                 'pre_registered_subject_id' => '12',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
@@ -118,7 +118,7 @@ class PreRegistrationTableSeeder extends Seeder
             ],
 
             [
-                'student_id' => '1',
+                'student_id' => '2',
                 'term_id' => '8',
                 'pre_registered_subject_id' => '13',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
@@ -126,7 +126,7 @@ class PreRegistrationTableSeeder extends Seeder
             ],
 
             [
-                'student_id' => '1',
+                'student_id' => '2',
                 'term_id' => '8',
                 'pre_registered_subject_id' => '14',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
@@ -135,7 +135,7 @@ class PreRegistrationTableSeeder extends Seeder
 
             //Student 3 data (2018-112382)
             [
-                'student_id' => '1',
+                'student_id' => '3',
                 'term_id' => '8',
                 'pre_registered_subject_id' => '15',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
@@ -143,7 +143,7 @@ class PreRegistrationTableSeeder extends Seeder
             ],
 
             [
-                'student_id' => '1',
+                'student_id' => '3',
                 'term_id' => '8',
                 'pre_registered_subject_id' => '16',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
@@ -151,7 +151,7 @@ class PreRegistrationTableSeeder extends Seeder
             ],
 
             [
-                'student_id' => '1',
+                'student_id' => '3',
                 'term_id' => '8',
                 'pre_registered_subject_id' => '17',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
@@ -159,7 +159,7 @@ class PreRegistrationTableSeeder extends Seeder
             ],
 
             [
-                'student_id' => '1',
+                'student_id' => '3',
                 'term_id' => '8',
                 'pre_registered_subject_id' => '18',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
@@ -167,9 +167,66 @@ class PreRegistrationTableSeeder extends Seeder
             ],
 
             [
-                'student_id' => '1',
+                'student_id' => '3',
                 'term_id' => '8',
                 'pre_registered_subject_id' => '19',
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
+            ],
+
+            //Student 4 data (2020-212121)
+            [
+                'student_id' => '4',
+                'term_id' => '8',
+                'pre_registered_subject_id' => '20',
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
+            ],
+
+            [
+                'student_id' => '4',
+                'term_id' => '8',
+                'pre_registered_subject_id' => '21',
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
+            ],
+
+            [
+                'student_id' => '4',
+                'term_id' => '8',
+                'pre_registered_subject_id' => '22',
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
+            ],
+
+            [
+                'student_id' => '4',
+                'term_id' => '8',
+                'pre_registered_subject_id' => '23',
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
+            ],
+
+            [
+                'student_id' => '4',
+                'term_id' => '8',
+                'pre_registered_subject_id' => '24',
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
+            ],
+
+            [
+                'student_id' => '4',
+                'term_id' => '8',
+                'pre_registered_subject_id' => '25',
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
+            ],
+
+            [
+                'student_id' => '4',
+                'term_id' => '8',
+                'pre_registered_subject_id' => '26',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
             ],

@@ -1206,7 +1206,105 @@ class GradesTableSeeder extends Seeder
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
             ],
-            
+
+
+            //Student 4 data (2020-212121)
+            //1st year 1st term
+            [
+                'subject_code' => 'PDESIGN',
+                'subject_desc' => 'Philosophy of Design', 
+                'midterm_grade' => '2.5', 
+                'midterm_num_grade' => '86',
+                'finals_grade' => '2.5', 
+                'finals_num_grade' => '86',
+                'credit_units' => "3.0", 
+                'term_grade' => '2.5', 
+                'num_term_grade' => '86', 
+                'student_id' => '1', 
+                'term_id' => '1', 
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
+            ],
+
+            [
+                'subject_code' => 'FDRAWNG',
+                'subject_desc' => 'Free drawing', 
+                'midterm_grade' => '2.5', 
+                'midterm_num_grade' => '86',
+                'finals_grade' => '2.5', 
+                'finals_num_grade' => '86',
+                'credit_units' => "3.0", 
+                'term_grade' => '2.5', 
+                'num_term_grade' => '86', 
+                'student_id' => '1', 
+                'term_id' => '1', 
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
+            ],
+
+            [
+                'subject_code' => 'INTROMA',
+                'subject_desc' => 'Intro to Multimedia Arts', 
+                'midterm_grade' => '2.5', 
+                'midterm_num_grade' => '86',
+                'finals_grade' => '2.5', 
+                'finals_num_grade' => '86',
+                'credit_units' => "3.0", 
+                'term_grade' => '2.5', 
+                'num_term_grade' => '86', 
+                'student_id' => '1', 
+                'term_id' => '1', 
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
+            ],
+
+            [
+                'subject_code' => 'PURPCOM',
+                'subject_desc' => 'Purposive Communication', 
+                'midterm grade' => '3.5', 
+                'midterm_num_grade' => '93',
+                'finals grade' => '3.5', 
+                'finals_num_grade' => '91',
+                'credit_units' => "3.0", 
+                'term_grade' => '3.5', 
+                'num_term_average' => '92',
+                'student_id' => '1', 
+                'term_id' => '1', 
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
+            ],
+
+            [
+                'subject_code' => 'UNDSELF',
+                'subject_desc' => 'Understanding the Self', 
+                'midterm grade' => '3.0', 
+                'midterm_num_grade' => '90',
+                'finals grade' => '3.0', 
+                'finals_num_grade' => '90',
+                'credit_units' => "3.0", 
+                'term_grade' => '3.0', 
+                'num_term_average' => '90', 
+                'student_id' => '1', 
+                'term_id' => '1', 
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
+            ],
+
+            [
+                'subject_code' => 'PEDUONE',
+                'subject_desc' => 'Physical Education 1', 
+                'midterm grade' => '4.0', 
+                'midterm_num_grade' => '96',
+                'finals grade' => '3.5', 
+                'finals_num_grade' => '94',
+                'credit_units' => "2.0", 
+                'term_grade' => '4.0', 
+                'num_term_average' => '95', 
+                'student_id' => '1', 
+                'term_id' => '1', 
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
+            ],
         ]);
     }
 }
