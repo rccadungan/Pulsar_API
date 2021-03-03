@@ -20,8 +20,8 @@ class TermTableSeeder extends Seeder
             [
                 'term_name' => 'Term 1',
                 'term_no' => '1',
-                'school_year_from' => '2021',
-                'school_year_to' => '2022',
+                'school_year_from' => '2020',
+                'school_year_to' => '2021',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
             ],
@@ -29,8 +29,8 @@ class TermTableSeeder extends Seeder
             [
                 'term_name' => 'Term 1',
                 'term_no' => '1',
-                'school_year_from' => '2021',
-                'school_year_to' => '2022',
+                'school_year_from' => '2019',
+                'school_year_to' => '2020',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
             ],
@@ -38,12 +38,57 @@ class TermTableSeeder extends Seeder
             [
                 'term_name' => 'Term 2',
                 'term_no' => '2',
-                'school_year_from' => '2021',
-                'school_year_to' => '2022',
+                'school_year_from' => '2019',
+                'school_year_to' => '2020',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
             ],
 
+            [
+                'term_name' => 'Term 3',
+                'term_no' => '3',
+                'school_year_from' => '2019',
+                'school_year_to' => '2020',
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
+            ],
+
+            [
+                'term_name' => 'Term 1',
+                'term_no' => '1',
+                'school_year_from' => '2018',
+                'school_year_to' => '2019',
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
+            ],
+
+            [
+                'term_name' => 'Term 2',
+                'term_no' => '2',
+                'school_year_from' => '2018',
+                'school_year_to' => '2019',
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
+            ],
+
+            [
+                'term_name' => 'Term 3',
+                'term_no' => '3',
+                'school_year_from' => '2018',
+                'school_year_to' => '2019',
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
+            ],
+
+            [
+                'term_name' => 'Term 2',
+                'term_no' => '2',
+                'school_year_from' => '2020',
+                'school_year_to' => '2021',
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
+            ],
+            
         ]);
     }
 }
