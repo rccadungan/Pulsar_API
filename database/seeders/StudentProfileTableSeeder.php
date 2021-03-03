@@ -19,7 +19,7 @@ class StudentProfileTableSeeder extends Seeder
         DB::table('student_profiles')->insert([
             [
                 'address' => 'Magallanes, Makati City',
-                'contact_no' => '09857128863',
+                'contact_no' => '0985-712-8863',
                 'course' => 'BSIT-MI, Bachelor of Science in Information Technology with specialization in Mobile and Internet Technology',
                 'birthdate' => '2002-03-15',
                 'birth_place' => 'Manila City',
@@ -32,7 +32,7 @@ class StudentProfileTableSeeder extends Seeder
 
             [
                 'address' => 'BGC, Taguig City',
-                'contact_no' => '09957821469',
+                'contact_no' => '0995-782-1469',
                 'course' => 'BSIT-MI, Bachelor of Science in Information Technology with specialization in Mobile and Internet Technology',
                 'birthdate' => '2001-5-5',
                 'birth_place' => 'Makati City',
@@ -45,7 +45,7 @@ class StudentProfileTableSeeder extends Seeder
 
             [
                 'address' => 'Marikina City',
-                'contact_no' => '09957863989',
+                'contact_no' => '0992-786-3989',
                 'course' => 'BSIT-MI, Bachelor of Science in Information Technology with specialization in Mobile and Internet Technology',
                 'birthdate' => '1999-11-20',
                 'birth_place' => 'Manila City',

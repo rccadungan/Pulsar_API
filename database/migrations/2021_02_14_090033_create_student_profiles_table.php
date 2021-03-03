@@ -16,7 +16,7 @@ class CreateStudentProfilesTable extends Migration
         Schema::create('student_profiles', function (Blueprint $table) {
             $table->increments('id');
             $table->string('address', 100);
-            $table->integer('contact_no'); //Unable to set the value of the variable as the system treats it as a primary key. 
+            $table->string('contact_no', 20);
             $table->string('course', 150);
             $table->date('birthdate'); //Y-m-d is the default date format for mysql date type.
             $table->string('birth_place', 100);

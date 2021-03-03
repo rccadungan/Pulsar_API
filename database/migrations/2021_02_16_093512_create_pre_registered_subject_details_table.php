@@ -17,7 +17,7 @@ class CreatePreRegisteredSubjectDetailsTable extends Migration
             $table->increments('id');
             $table->string('time', 20); 
             $table->string('day', 20); 
-            $table->integer('room_no'); 
+            $table->string('room_no', 50); 
             $table->string('instructor_name', 100); 
             $table->string('remarks', 1000); 
             $table->timestamps();
