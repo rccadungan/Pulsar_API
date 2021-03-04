@@ -33,6 +33,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::get('/login', [StudentController::class, 'login']);
+
 //Student Table
 //Get all 'students' table data. 
 Route::get('/students', [StudentController::class, 'getStudent']);
